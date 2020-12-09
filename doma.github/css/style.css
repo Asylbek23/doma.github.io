@@ -1,0 +1,623 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+  font-family: 'Geometria ExtraBold';
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'Geometria Light';
+  src: url("../fonts/Geometria-Light.woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-Regular.woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria Medium';
+  src: url("../fonts/Geometria-Medium.woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria Bold';
+  src: url("../fonts/Geometria-Bold.woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria ExtraBold';
+  src: url("../fonts/Geometria-ExtraBold.woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  font-family: 'Geometria Bold';
+  font-size: 13px;
+  background-image: linear-gradient(-221deg, #fb2b2b 0%, #f86c26 100%);
+  border-radius: 5px;
+}
+
+html,
+button,
+input {
+  font-family: "Geometria";
+  color: #284157;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.title {
+  color: #284157;
+  font-size: 30px;
+  font-family: "Geometria Bold";
+  text-align: center;
+}
+
+.title--white {
+  color: #ffffff;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  min-width: 222px;
+  padding-right: 20px;
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 620px;
+  margin-left: 15px;
+}
+
+.header__worktime {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  font-size: 12px;
+  padding-right: 20px;
+}
+
+.header__worktime strong {
+  display: block;
+}
+
+.header__worktime strong span {
+  display: block;
+  font-family: 'Geometria';
+}
+
+.header__worktime img {
+  display: block;
+  margin-left: 25px;
+  width: 18px;
+  height: 18px;
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
+}
+
+.header__contact button {
+  margin-left: 30px;
+  width: 170px;
+  height: 50px;
+}
+
+.header__phone {
+  font-size: 12px;
+  text-align: center;
+}
+
+.header__phone a {
+  font-family: 'Geometria ExtraBold';
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.main {
+  background: url(../img/main-bg.jpg) center center/cover no-repeat;
+}
+
+.main__wrapper {
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__descr {
+  display: flex;
+  flex-direction: column;
+  height: 504px;
+  width: 43%;
+  color: #fff;
+}
+
+.main__descr h1 {
+  font-size: 36px;
+  margin-top: 15px;
+  font-family: 'Geometria Bold';
+}
+
+.main__descr > p {
+  font-size: 18px;
+  font-family: 'Geometria Bold';
+  margin-top: 30px;
+}
+
+.main__descr span {
+  display: block;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.main__advantages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  line-height: 1.3;
+}
+
+.main__advantages div {
+  font-size: 14px;
+  font-family: "Geometria Medium";
+}
+
+.main__advantages div:last-child {
+  margin-right: 0;
+}
+
+.main__advantages div span {
+  font-family: 'Geometria';
+  margin-top: 7px;
+  font-size: 12px;
+}
+
+.main__form form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -23px;
+  margin-bottom: -23px;
+}
+
+.main__form-header {
+  font-family: 'Geometria Bold';
+  margin-bottom: 35px;
+  z-index: 200;
+}
+
+.main__form input {
+  width: 190px;
+  height: 45px;
+  outline: none;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main__form button {
+  width: 190px;
+  height: 50px;
+  z-index: 200;
+}
+
+.hex {
+  width: 370px;
+  min-height: 210px;
+  background-color: #fff;
+  position: relative;
+  float: left;
+}
+
+.hex:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 105px solid #fff;
+  border-left: 185px solid transparent;
+  border-right: 185px solid transparent;
+  position: absolute;
+  top: -105px;
+}
+
+.hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -105px;
+  border-top: 105px solid #fff;
+  border-left: 185px solid transparent;
+  border-right: 185px solid transparent;
+}
+
+.projects {
+  padding: 100px 0;
+}
+
+.projects__tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.projects__tab {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Geometria Bold";
+  color: #2a4258;
+  padding: 8px 14px;
+  margin: 0 7px;
+  cursor: pointer;
+}
+
+.projects__tab.active {
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px #2a4258;
+}
+
+.projects__slider {
+  margin-top: 60px;
+}
+
+.projects__slider.active {
+  display: block;
+}
+
+.projects__slider-block {
+  position: relative;
+}
+
+.projects__slider-item {
+  border-radius: 5px;
+  background: #fff;
+  min-height: 485px;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  overflow: hidden;
+}
+
+.projects__slider-img img {
+  display: block;
+  margin: 0 auto;
+}
+
+.projects__slider-title {
+  margin-top: 25px;
+  font-size: 20px;
+  font-family: 'Geometria Bold';
+}
+
+.projects__slider-sizes {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.projects__slider-sizes span {
+  display: block;
+}
+
+.projects__slider-sizes span:last-child {
+  margin-top: 10px;
+}
+
+.projects__slider-btn {
+  margin-top: 25px;
+}
+
+.projects__slider-btn button {
+  width: 210px;
+  height: 60px;
+}
+
+.swiper-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.swiper-dots {
+  display: flex;
+  justify-content: center;
+  min-width: 60px;
+}
+
+.swiper-dots .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid #41596b;
+  margin: 0 10px;
+  opacity: 1;
+}
+
+.swiper-dots .swiper-pagination-bullet-active {
+  border: 3px solid #41596b;
+}
+
+.prev,
+.next {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+.prev {
+  background: url(../img/icons/left.svg) no-repeat center;
+  margin-right: 60px;
+}
+
+.next {
+  background: url(../img/icons/right.svg) no-repeat center;
+  margin-left: 60px;
+}
+
+#tab2,
+#tab3 {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    background: #005d9d;
+    background: linear-gradient(90deg, #005d9d 0%, #4daee9 100%);
+  }
+
+  .main__advantages {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .main__advantages div {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .header__contacts {
+    width: auto;
+  }
+
+  .header__worktime {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .main__descr {
+    display: none;
+  }
+
+  .main__form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header__phone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

@@ -1,0 +1,42 @@
+//- Подключение библиотеки bemto
+include blocks/libs/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+//- Подключение шаблонов
+include blocks/head
+include blocks/header
+
+//- Базовый шаблон
+doctype html
+html(lang="ru")
+
+	block head
+		+head({
+			"title": "ДомаНавека - Строим Дома",
+			"author": "Asik",
+			"description": "ДомаНавека - Строим Дома"
+		})
+
+	body.page
+		block header
+			+header()
+
+		block content
+			div content
+
+		block footer
+			footer
+
+		block vendors
+			// build:js js/vendor.js
+			script(src="js/libs/jquery/dist/jquery.min.js")
+			//- script(src="js/libs/slick-carousel/slick/slick.min.js")
+			script(src="js/libs/swiper/swiper-bundle.min.js")
+			//- script(src="js/libs/jquery.validate.min.js")
+			//- script(src="js/libs/jquery.maskedinput.min.js")
+			// endbuild
+
+		block scripts
+			// build:js js/main.js
+			script(src="js/main.js")
+			// endbuild

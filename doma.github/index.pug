@@ -1,0 +1,15 @@
+extends template
+
+include blocks/projects
+
+block content
+	+projects()
+
+block footer
+	+b.FOOTER.footer
+		.container
+			+e.wrapper
+
+	//- .overlay
+	//- a(href="#up").pageup
+	//- 	img(src="img/icons/up.svg", alt="up")

@@ -1,0 +1,34 @@
+// Assets
+@import 'blocks/helpers/_reset'
+@import 'blocks/helpers/_vars'
+@import 'blocks/helpers/_fonts'
+@import 'blocks/helpers/_mixins'
+@import 'blocks/libs/smart-grid'
+@import 'blocks/helpers/_buttons'
+@import 'blocks/helpers/_forms'
+@import 'blocks/helpers/_media'
+@import 'blocks/helpers/_modal'
+
+html, button, input
+	font-family: $main
+	color: #284157
+
+.container
+	+wrapper()
+
+.title
+	color: #284157
+	font-size: 30px
+	font-family: $bold
+	text-align: center
+	&--white
+		color: #ffffff
+
+.subtitle
+	&--white
+
+
+// Blocks
+@import 'blocks/header'
+@import 'blocks/projects'
+@import 'blocks/footer'
